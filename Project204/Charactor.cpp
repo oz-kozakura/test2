@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <random>
-#include "../test2_sub/sub/subtract.h"
+#include "subtract.h"
 
 /// <summary>
 /// 最小値～最大値の範囲でランダムな値を取得する
