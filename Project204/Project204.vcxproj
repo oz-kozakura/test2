@@ -131,7 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="$(ProjectDir)test2_sub\sub\sub.vcxproj" />
+    <ProjectReference Include="test2_sub\sub\sub.vcxproj" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Charactor.cpp" />
