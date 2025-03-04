@@ -130,9 +130,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ProjectReference Include="test2_sub\sub\sub.vcxproj" />
-  </ItemGroup>
+  <ProjectReference Include="test2_sub\sub\sub.vcxproj" />
   <ItemGroup>
     <ClCompile Include="Charactor.cpp" />
     <ClCompile Include="Main.cpp" />
