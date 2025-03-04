@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <random>
-#include "test2_sub/subtract.h"
+//#include "test2_sub/subtract.h"
 
 /// <summary>
 /// 最小値～最大値の範囲でランダムな値を取得する
@@ -32,6 +32,6 @@ void Charactor::attack(Charactor& attackedSide)
 	std::cout << attackedSide.name_ << "に" << damages << "のダメージを与えた！" << std::endl;
 
 	// 現在の体力を更新
-	//attackedSide.current_hp_ = attackedSide.current_hp_ - damages;
-	attackedSide.current_hp_ = subtract(attackedSide.current_hp_, damages);
+	attackedSide.current_hp_ = attackedSide.current_hp_ - damages;
+	//attackedSide.current_hp_ = subtract(attackedSide.current_hp_, damages);
 }
