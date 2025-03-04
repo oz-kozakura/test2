@@ -1,12 +1,9 @@
 name: Build C++ Project with MSBuild
 
 on:
-  push:
+  workflow_dispatch:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - using-submodules
 
 jobs:
   build:
