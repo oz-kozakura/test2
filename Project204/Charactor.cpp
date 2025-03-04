@@ -33,5 +33,5 @@ void Charactor::attack(Charactor& attackedSide)
 
 	// 現在の体力を更新
 	attackedSide.current_hp_ = attackedSide.current_hp_ - damages;
-	//attackedSide.current_hp_ = subtract(attackedSide.current_hp_, damages);
+	attackedSide.current_hp_ = subtract(attackedSide.current_hp_, damages);
 }
