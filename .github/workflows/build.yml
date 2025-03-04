@@ -1,0 +1,27 @@
+name: Build with MSBuild
+
+on:
+  workflow_dispatch:
+    branches:
+      - using-submodules
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        submodules: 'true'  # サブモジュールもチェックアウトする
+
+    - name: Set up MSBuild environment
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Restore NuGet packages (if needed)
+      run: |
+        nuget restore Project204.sln
+
+    - name: Build with MSBuild
+      run: |
+        msbuild Project204.sln /p:Configuration=Release /p:Platform=x64
